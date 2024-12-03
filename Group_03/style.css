@@ -1,0 +1,171 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+}
+
+.header img {
+  height: 50px;
+}
+
+.header h1 {
+  font-size: 24px;
+  color: #333;
+  margin-left: 10px;
+}
+
+.header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.header nav a:hover {
+  color: #007BFF;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('images/hero.webp'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #f39c12;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #e67e22;
+}
+
+/* Featured Products */
+.featured {
+  text-align: center;
+  padding: 20px;
+}
+
+.featured h2 {
+  margin-bottom: 20px;
+}
+
+.featured-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  margin: 5px 0;
+}
+
+.product .price {
+  color: #333;
+  font-weight: bold;
+}
+
+.product a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.product a:hover {
+  background-color: #0056b3;
+}
+
+/* About Section */
+.about {
+  text-align: center;
+  padding: 20px;
+}
+
+.about p {
+  margin: 10px 0;
+}
+
+.about .cta-button {
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.footer nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer nav a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .featured-products {
+    grid-template-columns: 1fr;
+  }
+}
